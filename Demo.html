@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <form action="/action_page.php">
+        <div class="container">
+
+            <h1 id="hd">Student Registration Form</h1><br><br>
+
+            <label for="First Name"><b>First Name:</b></label>
+            <input type="text" placeholder="Enter First Name" name="Fname" id="Fname" required>
+
+            <label for="Last Name"><b>Last Name:</b></label>
+            <input type="text" placeholder="Enter Last Name" name="Lname" id="Lname" required>
+
+
+            <label for="Gender"><b>Gender:</b></label><br><br>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">Female</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">Male</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">Other</label><br><br>
+
+            <label for="birthday"><b>Date of Birthday:</b></label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+
+            <label for="dept"><b>Choose a Dept:</b></label>
+            <select name="dept" id="dept">
+                <option label="_Select_"></option>
+                <option value="comp">Comp</option>
+                <option value="it">Information Technology</option>
+                <option value="mech">Mechanical</option>
+                <option value="civil">Civil</option>
+            </select>
+            <br><br>
+
+            <label for="regist"><b>Registration Date:</b></label>
+            <input type="date" id="regist" name="regist"><br><br>
+
+            <label for="phone"><b>Enter a phone number:</b></label>
+            <input type="tel" id="phone" name="phone" placeholder="+91-000-000-0000" pattern=required><br><br>
+
+            <div class="form-group">
+                <label for="inputAddress"><b>Address:</b></label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity"><b>City:</b></label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="City">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="inputState"><b>State:</b></label>
+                    <select id="inputState" class="form-control">
+                        <option selected>_Select_</option>
+                        <option>Maharashtra</option>
+                        <option>Delhi</option>
+                        <option>Gujarat</option>
+                        <option>Karnataka</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+            <br><br>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+            <label for="psw"><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+            <label for="psw-repeat"><b>Repeat Password:</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+            <hr>
+
+
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
